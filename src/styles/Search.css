@@ -1,8 +1,28 @@
 .search-input {
-  margin: auto;
-  width: 20%;
+  width: 60%;
   height: 50px;
   border-radius: 11px;
   font-size: 20px;
   padding: 0 10px;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: row;
+}
+
+.search-button {
+  width: 100px;
+  background-color: aliceblue;
+  border-radius: 8px;
+  color: darkblue;
+  padding: 10px 24px;
+  text-align: center;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.search-button:hover {
+  background-color: dimgrey;
 }
