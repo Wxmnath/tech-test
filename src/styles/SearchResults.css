@@ -1,0 +1,16 @@
+.search-results {
+  border: 3px solid black;
+  border-radius: 11px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.search-result {
+  color: darkblue;
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-style: oblique;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}

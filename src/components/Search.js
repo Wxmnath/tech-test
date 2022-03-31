@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "../styles/Search.css";
 import getImages from "../requests/getImages";
 
-function SearchForm() {
+function SearchForm({ setSearchResults }) {
   const [value, setValue] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    getImages(value);
+    setSearchResults(getImages(value));
   };
 
   return (
