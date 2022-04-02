@@ -1,16 +1,17 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "../styles/SearchResults.css";
 
 function SearchResults({ results }) {
   if (!results.length) {
-    return <p>No results found!</p>;
+    return <p className="no-result-title">No results found!</p>;
   } else {
     return (
       <>
         {results.map((image) => (
           <img
             className="search-results"
-            src="https://images.unsplash.com/photo-1522030299830-16b8d3d049fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+            src={image}
             aria-hidden
             alt="space-image"
           />
@@ -19,5 +20,9 @@ function SearchResults({ results }) {
     );
   }
 }
+
+SearchResults.propTypes = {
+  results: PropTypes.arrayOf(PropTypes.string.isRequired),
+};
 
 export default SearchResults;

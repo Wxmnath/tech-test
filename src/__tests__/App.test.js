@@ -1,8 +1,17 @@
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import App from "../components/App";
 
-test("renders learn react link", () => {
-  render(<App />);
-  const { asFragment } = render(<App />);
-  expect(asFragment).toMatchSnapshot();
+describe("App", () => {
+  test("renders learn react link", () => {
+    render(<App />);
+    const { asFragment } = render(<App />);
+    expect(asFragment).toMatchSnapshot();
+  });
+  it("renders logo", () => {
+    render(<App />);
+    const imageTest = screen.getByAltText("nasaLogo");
+
+    expect(imageTest).toBeInTheDocument();
+    expect(imageTest).toHaveClass("nasa-image");
+  });
 });

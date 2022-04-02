@@ -18,6 +18,13 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "rules": {
+    "no-restricted-globals": [
+      "error",
+      "event",
+      "fdescribe"
+    ]
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
