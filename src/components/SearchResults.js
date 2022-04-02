@@ -8,21 +8,23 @@ function SearchResults({ results }) {
   } else {
     return (
       <>
-        {results.map((image) => (
-          <img
-            className="search-results"
-            src={image}
-            aria-hidden
-            alt="space-image"
-          />
-        ))}
+        <div className="return-all-images">
+          {results.map((image) => (
+            <img
+              className="search-results"
+              src={image}
+              aria-hidden
+              alt="space-image"
+            />
+          ))}
+        </div>
       </>
     );
   }
 }
 
 SearchResults.propTypes = {
-  results: PropTypes.arrayOf(PropTypes.string.isRequired),
+  results: PropTypes.arrayOf(PropTypes.string),
 };
 
 export default SearchResults;
