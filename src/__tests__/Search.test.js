@@ -6,7 +6,7 @@ describe("Search", () => {
     setSearchResults: () => {},
   };
 
-  test("renders learn react link", () => {
+  test("renders search component", () => {
     const { asFragment } = render(
       <SearchForm setSearchResults={validProps.setSearchResults} />
     );
