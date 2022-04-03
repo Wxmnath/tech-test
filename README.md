@@ -62,10 +62,9 @@ To build on this app further I would look to make the following additions:
 
 ---
 
-## Created By
+## Created By Nathan Humphreys
 
-Nathan Humphreys
+My Contact Details:
 
-My Details
-Contact [LinkedIn](https://www.linkedin.com/in/nathan-humphreys-638747190/)
-Email wxmnath@aol.com
+- [LinkedIn](https://www.linkedin.com/in/nathan-humphreys-638747190/)
+- wxmnath@aol.com
